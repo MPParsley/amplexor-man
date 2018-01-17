@@ -12,8 +12,8 @@
 }
 
 @font-face { 
-	font-family: 'Quadrit'; 
-	src: url('../css/Quadrit.ttf'); 
+	font-family: 'Quadrit';
+	src: local('Quadrit'), url('../css/Quadrit.ttf') format('woff');
 }
 
 * { 
