@@ -1,6 +1,7 @@
 #home h1 { 
 	text-align: center;
-	font-size: 78px;
+	font-size: 84px;
+	letter-spacing: 20px;
 }
 #home h3 { 
 	position: absolute;
@@ -19,9 +20,9 @@
 	background-color: #000;
 	position: absolute;
 	top: 10px;
-	left: 182px;
+	left: 480px;
 	height: 100px;
-	width: 118px;
+	width: 100px;
 }
 #canvas-panel-title-pacman { 
 	background-color: #000;
