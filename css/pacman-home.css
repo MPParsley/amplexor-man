@@ -54,7 +54,7 @@
 	text-transform: uppercase;
 	color: #fff;
 }
-#canvas-presentation-blinky, #canvas-presentation-pinky, #canvas-presentation-inky, #canvas-presentation-clyde { 
+#canvas-presentation-blinky, #canvas-presentation-pinky, #canvas-presentation-inky, #canvas-presentation-clyde, #canvas-presentation-jover, #canvas-presentation-extra {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -72,8 +72,14 @@
 #canvas-presentation-clyde { 
 	top: 190px;
 }
-#presentation-character-blinky, #presentation-character-pinky, #presentation-character-inky, #presentation-character-clyde, 
-#presentation-name-blinky, #presentation-name-pinky, #presentation-name-inky, #presentation-name-clyde { 
+#canvas-presentation-jover {
+	top: 240px;
+}
+#canvas-presentation-extra {
+	top: 290px;
+}
+#presentation-character-blinky, #presentation-character-pinky, #presentation-character-inky, #presentation-character-clyde, #presentation-character-jover, #presentation-character-extra,
+#presentation-name-blinky, #presentation-name-pinky, #presentation-name-inky, #presentation-name-clyde, #presentation-name-jover, #presentation-name-extra {
 	position: absolute;
 	width: 180px;
 	height: 28px;
@@ -82,7 +88,7 @@
 	font-size: 20px;
 	text-transform: uppercase;
 }
-#presentation-name-blinky, #presentation-name-pinky, #presentation-name-inky, #presentation-name-clyde { 
+#presentation-name-blinky, #presentation-name-pinky, #presentation-name-inky, #presentation-name-clyde, #presentation-name-jover, #presentation-name-extra {
 	left: 310px;
 	width: 180px;
 }
@@ -101,6 +107,14 @@
 #presentation-character-clyde, #presentation-name-clyde { 
 	top: 200px;
 	color: #f99c00;
+}
+#presentation-character-jover, #presentation-name-jover {
+	top: 250px;
+	color: #78abf7;
+}
+#presentation-character-extra, #presentation-name-extra {
+	top: 300px;
+	color: #feaec9;
 }
 
 #trailer { 

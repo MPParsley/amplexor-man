@@ -123,8 +123,26 @@ function initHome() {
 	}
 	ctx.fillStyle = GHOST_CLYDE_COLOR;
 	drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
-	
-	startPresentation();
+
+    canvas = document.getElementById('canvas-presentation-jover');
+    canvas.setAttribute('width', '50');
+    canvas.setAttribute('height', '50');
+    if (canvas.getContext) {
+        ctx = canvas.getContext('2d');
+    }
+    ctx.fillStyle = "#78abf7";
+    drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+
+    canvas = document.getElementById('canvas-presentation-extra');
+    canvas.setAttribute('width', '50');
+    canvas.setAttribute('height', '50');
+    if (canvas.getContext) {
+        ctx = canvas.getContext('2d');
+    }
+    ctx.fillStyle = "##fff200";
+    drawHelperGhost(ctx, 25, 25, 1, 0, 0, 0);
+
+    startPresentation();
 }
 
 function startPresentation() { 
@@ -171,9 +189,21 @@ function nextSequencePresentation() {
 		$("#presentation-character-clyde").show();
 	} else if (HOME_PRESENTATION_STATE === 17) { 
 		$("#presentation-name-clyde").show();
+	} else if (HOME_PRESENTATION_STATE === 18) {
+		$("#canvas-presentation-jover").show();
+	} else if (HOME_PRESENTATION_STATE === 19) {
+		$("#presentation-character-jover").show();
+	} else if (HOME_PRESENTATION_STATE === 20) {
+		$("#presentation-name-jover").show();
+	} else if (HOME_PRESENTATION_STATE === 21) {
+		$("#canvas-presentation-extra").show();
+	} else if (HOME_PRESENTATION_STATE === 22) {
+		$("#presentation-character-extra").show();
+	} else if (HOME_PRESENTATION_STATE === 23) {
+		$("#presentation-name-extra").show();
 	}
 	
-	if (HOME_PRESENTATION_STATE === 17) { 
+	if (HOME_PRESENTATION_STATE === 23) {
 		clearInterval(HOME_PRESENTATION_TIMER);
 		HOME_PRESENTATION_TIMER = -1;
 		
